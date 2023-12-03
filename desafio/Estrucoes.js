@@ -39,36 +39,3 @@ Ao final deve se exibir uma mensagem:
   guerreiro atacou usando espada
   
 */
-class Heroi {
-  constructor(nome, idade, tipo) {
-      this.nome = nome;
-      this.idade = idade;
-      this.tipo = tipo;
-      this.ataque = "iniciante"; 
-  }
-
-  atacar() {
-      switch (this.tipo) {
-          case "guerreiro":
-              this.ataque = "usou espada";
-              break;
-          case "mago":
-              this.ataque = "magia";
-              break;
-          case "monge":
-              this.ataque = "artes marciais";
-              break;
-          case "ninja":
-              this.ataque = "usou shuriken";
-              break;
-      }
-
-      console.log("O " + this.tipo + " atacou usando " + this.ataque);
-  }
-}
-
-let ninja = new Heroi("Celso", "29", "guerreiro");
-let guerreiro = new Heroi("Carlos", "31", "mago");
-
-ninja.atacar();
-guerreiro.atacar();
