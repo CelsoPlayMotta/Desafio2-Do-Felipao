@@ -44,7 +44,7 @@ class Heroi {
       this.nome = nome;
       this.idade = idade;
       this.tipo = tipo;
-      this.ataque = "iniciante"; // Set a default value
+      this.ataque = "iniciante"; 
   }
 
   atacar() {
